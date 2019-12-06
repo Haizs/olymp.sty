@@ -1,0 +1,46 @@
+\documentclass[11pt,a4paper,oneside]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{olymp}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color} % for colored text
+\usepackage{import} % for changing current dir
+\usepackage{epigraph}
+\usepackage{daytime} % for displaying version number and date
+\usepackage{wrapfig} % for having text alongside pictures
+\usepackage{verbatim}
+\usepackage{array} % compatibility check
+\usepackage[export]{adjustbox}
+\usepackage{setspace}
+
+\newcommand{\importproblem}[1]{\import{./problems/}{./#1.en.tex}}
+\graphicspath{./problems}
+\newcommand{\adjustgraphics}[1]{\begin{center}\includegraphics[max width=\textwidth]{#1}\end{center}}
+
+\contest
+{The 2019 ICPC Asia Shenyang Regional Contest, Dress Rehearsal}%
+{Northeastern University}%
+{November 16, 2019}%
+
+\binoppenalty=10000
+\relpenalty=10000
+\exhyphenpenalty=10000
+
+% \def\NoInputFileName{}
+% \def\NoOutputFileName{}
+\def\NoTimeLimit{}
+% \def\NoMemoryLimit{}
+
+\begin{document}
+
+\input{cover-dress-rehearsal.tex}
+
+\raggedbottom
+
+\importproblem{hello-icpc-shenyang}
+
+\end{document}
